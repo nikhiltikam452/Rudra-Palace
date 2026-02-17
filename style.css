@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    background-color:aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    background-color:#003366;
+    color:white;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-around; /* Create a space between the elements */
+    flex-wrap: wrap;
+}
+
+.brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.brand nav a{
+    align-items:flex-start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:medium;
+    padding: 10px auto;
+    margin: auto;
+}
+nav{
+    margin-top: 0.5rem;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10x;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover{
+    color: chocolate;
+}
+.hero{
+    background: url('./Images/dad-hotel-FCSDBKliyTQ-unsplash.jpg') center center / cover no-repeat;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    padding: 8rem 2rem;
+}
+.container{
+    flex: 1px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #003366;
+}
+.container p{
+    text-align: center;
+    color: #555;
+}
+footer{
+    text-align: center;
+    background-color: #003366;
+    padding: 22px;
+    color: #fff;
+    font-size: medium;
+}
+.rooms{
+    margin: 20px;
+    padding: 20px auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.card{
+    background: #ffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: solid 2px;
+    transition: transform 0.3s, box-shodow 0.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+    background-color: cadetblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+.booking-form{
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto ;
+    border-radius: 10px;
+    border: solid 2px;
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    gap: 10px;
+}
+
+
+.booking-form button{
+    padding: 10px;
+    width: 20%;
+    background-color: #555;
+    color: #fff;
+}
+.booking-form select,date{
+    width: 30%;
+}
+

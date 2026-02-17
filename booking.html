@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>  
+        <div class="brand">    
+            Rudra Palace Hotel
+            <nav>
+                <a href="Index.html">Home</a>
+            </nav>
+        </div>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="booking.html">Booking</a>
+        </nav>
+    </header>
+     <main class="container">
+           <h2>Book Your Stay</h2>
+           <form action="" class="booking-form">
+                <label for="Name">Name</label>
+                <input type="text" name="" id="name" placeholder="Your Name ...." required>
+
+                <label for="Email">Email ID</label>
+                <input type="email" name="" id="email" placeholder="Your Email ID ...." required>
+
+                <label for="RoomType">Room Type</label>
+                <select name="RoomType" id="rmtye" required> Select Room Type
+                    <option value="delux">Delux Room</option>
+                    <option value="executive">Executive Room</option>
+                    <option value="standard">Standard Room</option>
+                    <option value="queen">Queen Room</option>
+                    <option value="king">King Room</option>
+                </select>
+
+                <label for="chkindt">Check-In-Date</label>
+                <input type="date" required>
+
+                <label for="chkoutdt">Check-Out-Date</label>
+                <input type="date" required>
+
+                <button type="submit">Book Now</button>
+           </form>
+     </main>
+     <footer>
+        &copy; Rudra Palace Hotel.
+    </footer>
+</body>
+</html>
